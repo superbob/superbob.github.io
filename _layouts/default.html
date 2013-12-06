@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="{{ site.url }}/stylesheets/styles.css">
+    <link rel="stylesheet" href="{{ site.url }}/stylesheets/pygment_trac.css">
+    <script src="{{ site.url }}/javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+{% if page.project-url != null %}
+  {% assign github-url = page.project-url %}
+{% else %}
+  {% assign github-url = site.github-url %}
+{% endif %}
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.subtitle }}</p>
+        <p class="view"><a href="{{ github-url }}">View the Project on GitHub <small>{{ site.user }}</small></a></p>
+        <ul>
+          <li class="single"><a href="{{ github-url }}">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+    </div>
+    <footer>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>

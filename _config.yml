@@ -1,0 +1,5 @@
+name: Your New Jekyll Site
+github-url: "https://github.com/superbob"
+user: superbob
+markdown: redcarpet
+pygments: true
