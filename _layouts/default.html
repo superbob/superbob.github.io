@@ -26,7 +26,12 @@
         <p>{{ page.subtitle }}</p>
         <p class="view"><a href="{{ github-url }}">View the Project on GitHub <small>{{ site.user }}</small></a></p>
         <ul>
-          <li class="single"><a href="{{ github-url }}">View On <strong>GitHub</strong></a></li>
+{% if page.project-url != null %}
+          <li><a href="{{ site.github-url }}">{{ site.user }} On <strong>GitHub</strong></a></li>
+          <li class="last"><a href="{{ page.project-url }}">Project On <strong>GitHub</strong></a></li>
+{% else %}
+          <li class="single"><a href="{{ site.github-url }}">View On <strong>GitHub</strong></a></li>
+{% endif %}
         </ul>
       </header>
       <section>

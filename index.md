@@ -14,6 +14,6 @@ You can find here some information on my activity on GitHub.com and the projects
 
   > {{ project.excerpt }}
 
-  [More information on this project]({{ project.url }}) | [View On GitHub]({{ project.project-url }})
+  [Read more]({{ project.url }}) | [View On GitHub]({{ project.project-url }})
 
 {% endfor %}
