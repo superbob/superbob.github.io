@@ -17,3 +17,13 @@ You can find here some information on my activity on GitHub.com and the projects
   [Read more]({{ project.url }}) | [View On GitHub]({{ project.project-url }})
 
 {% endfor %}
+
+### Narcicism
+
+My name is Florian Morgan, you can find more information about me [here](http://about.me/florian.morgan).
+
+### Credits
+
+[GitHub](https://github.com/) for its first class git and web hosting.<br />
+[Jekyll](http://jekyllrb.com/) for its really nice static website generator.<br />
+[orderedlist](https://github.com/orderedlist) for his beautiful [Modernist](https://github.com/orderedlist/modernist) theme.
